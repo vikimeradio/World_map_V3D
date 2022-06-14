@@ -1,0 +1,836 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <tab name="init" type="InitTab" active="false" scrollx="768.9999999999999" scrolly="424.49999999999994" scale="0.9"></tab>
+  <tab name="main" type="MainTab" active="true" scrollx="1033.720112820804" scrolly="957.2033623414748" scale="0.7655186873167402">
+    <block xmlns="https://developers.google.com/blockly/xml" type="setTimer" id="X(2Zz/mlQ9zV`g[E6?)E" x="-1350" y="-1250">
+      <value name="ID">
+        <shadow type="text" id="P:6m)B=V[/{D);aoEAfl">
+          <field name="TEXT">autorotate</field>
+        </shadow>
+      </value>
+      <value name="VALUE">
+        <shadow type="math_number" id="pnr1Q#:Rm#cp~Ad6~JOk">
+          <field name="NUM">10</field>
+        </shadow>
+      </value>
+      <value name="REPEAT">
+        <shadow type="math_number" id="pkUn[Gqkuc5%HZfzc;`H">
+          <field name="NUM">Infinity</field>
+        </shadow>
+      </value>
+      <statement name="DO">
+        <block type="autoRotateCamera" id="n]q3OQ2b-R;=9L_LZ4ZK">
+          <field name="ON_OFF">ON</field>
+          <value name="SPEED">
+            <shadow type="math_number" id="H61/@,$=aCB1c;aufuo,">
+              <field name="NUM">2</field>
+            </shadow>
+          </value>
+        </block>
+      </statement>
+      <next>
+        <block type="whenClicked" id=".u^Do-yg5Jv_dXyk9)TZ">
+          <mutation xmlns="http://www.w3.org/1999/xhtml" adveventoptions="false" enableifmissed="false"></mutation>
+          <field name="X_RAY">FALSE</field>
+          <field name="DOUBLE_CLICK">FALSE</field>
+          <field name="LEFT_BUTTON">TRUE</field>
+          <field name="MIDDLE_BUTTON">TRUE</field>
+          <field name="RIGHT_BUTTON">TRUE</field>
+          <value name="VALUE">
+            <shadow type="objectList" id="v7SpURkkkNLc#XEQOGsG">
+              <field name="FIELDNAME">&lt;none&gt;</field>
+            </shadow>
+            <block type="allObjectList" id=";Ph)hBbH,]ypZlA*cuml"/>
+          </value>
+          <statement name="DO">
+            <block type="autoRotateCamera" id="]pPGFRVJh[htlu6%+O^/">
+              <field name="ON_OFF">OFF</field>
+              <value name="SPEED">
+                <shadow type="math_number" id="CWxT}/to!O[EI~FcGXya">
+                  <field name="NUM">2</field>
+                </shadow>
+              </value>
+              <next>
+                <block type="setTimer" id="ulh_i|d?4p60/(B^DZDx">
+                  <value name="ID">
+                    <shadow type="text" id="{S0kgfs{5ssOXMo=P8GL">
+                      <field name="TEXT">autorotate</field>
+                    </shadow>
+                  </value>
+                  <value name="VALUE">
+                    <shadow type="math_number" id="mT7hA^LG/P^ho|f{P=5R">
+                      <field name="NUM">10</field>
+                    </shadow>
+                  </value>
+                  <value name="REPEAT">
+                    <shadow type="math_number" id="GbDN{l]C2vC0Ppq8T)Jm">
+                      <field name="NUM">Infinity</field>
+                    </shadow>
+                  </value>
+                  <statement name="DO">
+                    <block type="autoRotateCamera" id="[$$p/r)fFQQI?gx4][fQ">
+                      <field name="ON_OFF">ON</field>
+                      <value name="SPEED">
+                        <shadow type="math_number" id="V5*hkW,47#5Ng5q:[X}h">
+                          <field name="NUM">2</field>
+                        </shadow>
+                      </value>
+                    </block>
+                  </statement>
+                </block>
+              </next>
+            </block>
+          </statement>
+        </block>
+      </next>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="eventHTMLElem" id="q@U.$7k+pGb7[kOesyz*" x="-690" y="-950">
+      <field name="EVENT">click</field>
+      <field name="PARENT">TRUE</field>
+      <value name="ID">
+        <shadow type="text" id="Mo/^t@BHO#z|D[su.F~W">
+          <field name="TEXT">Hide_btn</field>
+        </shadow>
+      </value>
+      <statement name="DO">
+        <block type="hide" id="AOKTBhR[@(X@K^*,C+a7">
+          <value name="VALUE">
+            <shadow type="objectList" id="9eUTA_|]|]8!{+=,/cY0">
+              <field name="FIELDNAME">&lt;none&gt;</field>
+            </shadow>
+            <block type="groupList" id="|?uhBBFQ5xrCTafZ/^Z6">
+              <field name="FIELDNAME">Collection 2</field>
+            </block>
+          </value>
+        </block>
+      </statement>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="eventHTMLElem" id="`eQ@]Mn,lj[Zv_])4huM" x="-1250" y="-870">
+      <field name="EVENT">click</field>
+      <field name="PARENT">TRUE</field>
+      <value name="ID">
+        <shadow type="text" id="QzP1:$8`MpnE-s79O4ZW">
+          <field name="TEXT">Show_btn</field>
+        </shadow>
+      </value>
+      <statement name="DO">
+        <block type="show" id="Yq?VXD^]@5TCj.!51kD5">
+          <value name="VALUE">
+            <shadow type="objectList" id="1ol~;-x3lokFY1zjb9k|">
+              <field name="FIELDNAME">&lt;none&gt;</field>
+            </shadow>
+            <block type="groupList" id="%{w?2{$T3gy?]M]p%8f_">
+              <field name="FIELDNAME">Collection 2</field>
+            </block>
+          </value>
+        </block>
+      </statement>
+    </block>
+  </tab>
+  <tab name="Anno" type="SecondaryTab" active="false" scrollx="224.8240966796875" scrolly="-419.73419189453125" scale="0.7037802038446168">
+    <block xmlns="https://developers.google.com/blockly/xml" type="addAnnotation" id="1;|q0bwnF,#Pvj.axJ#m" x="-10" y="50">
+      <mutation xmlns="http://www.w3.org/1999/xhtml" usenameslot="false"></mutation>
+      <value name="ANNOTATION">
+        <shadow type="text" id="N:d0d:wa`].v3$HR+y}t">
+          <field name="TEXT">1</field>
+        </shadow>
+      </value>
+      <value name="TARGET">
+        <shadow type="objectList" id="VougkT03V){omB(T2rIJ">
+          <field name="FIELDNAME">Russia</field>
+        </shadow>
+      </value>
+      <value name="CONTENTS">
+        <shadow type="text" id="rB-BF[IM.c3!Y.PC9;J1">
+          <field name="TEXT">Росси́я, или Росси́йская Федера́ция (РФ) — государство в Восточной Европе и Северной Азии. Территория России в её конституционных границах составляет 17 125 191 км²; население страны (в пределах её заявленной территории) составляет 145 557 576 чел. (2022). Занимает первое место в мире по территории, шестое — по объёму ВВП по ППС и девятое — по численности населения. Столица — Москва. Государственный язык на всей территории страны — русский</field>
+        </shadow>
+      </value>
+      <value name="ID">
+        <shadow type="text" id="N!9[V~cn8(M1C#[re[0W">
+          <field name="TEXT">ru</field>
+        </shadow>
+      </value>
+      <next>
+        <block type="addAnnotation" id="{#VAXz!Tr(J/wPAeWP~U">
+          <mutation xmlns="http://www.w3.org/1999/xhtml" usenameslot="false"></mutation>
+          <value name="ANNOTATION">
+            <shadow type="text" id="qll?URH=?fNI*^GpX9yO">
+              <field name="TEXT">2</field>
+            </shadow>
+          </value>
+          <value name="TARGET">
+            <shadow type="objectList" id="L36]5g:)#U!H%%q|B0o~">
+              <field name="FIELDNAME">Australia</field>
+            </shadow>
+          </value>
+          <value name="CONTENTS">
+            <shadow type="text" id="NgL%OOGvXcjhh,[:[wG;">
+              <field name="TEXT">Австралия – государство в Южном полушарии, на материке Австралия (единственное в мире, занимающее целый материк), острове Тасмания и мелких прибрежных островах (Мелвилл, Грут-Айленд, Кенгуру, Батерст, Флиндерс, Кинг и др.). Площадь 7,7 млн. км2. Население 23,9 млн. чел. (2015). Столица – Канберра. Официальный язык – английский. Денежная единица – австралийский доллар. Административно-территориальное деление: 6 штатов и 3 внутренние территории (табл. 1). В состав А. также входят 7 внешних территорий (владений): в Индийском океане – Остров Рождества, Кокосовые Острова, Острова Ашмор и Картье, Острова Херд и Мак-Дональд (последние две территории – необитаемые); в Тихом океане – Остров Норфолк и Острова Кораллового моря (последняя территория – необитаемая); Австралийская антарктическая территория (необитаемая).</field>
+            </shadow>
+          </value>
+          <value name="ID">
+            <shadow type="text" id="e/!Qp=DjrbXPJK,HhUF1">
+              <field name="TEXT">au</field>
+            </shadow>
+          </value>
+          <next>
+            <block type="addAnnotation" id="BZL=F|7]|qv;H44kh;Cq">
+              <mutation xmlns="http://www.w3.org/1999/xhtml" usenameslot="false"></mutation>
+              <value name="ANNOTATION">
+                <shadow type="text" id="G-.8o1PgY}%^BQtr;AcD">
+                  <field name="TEXT">3</field>
+                </shadow>
+              </value>
+              <value name="TARGET">
+                <shadow type="objectList" id="UUezK_vpuf~1kFC/NaYh">
+                  <field name="FIELDNAME">Belarus</field>
+                </shadow>
+              </value>
+              <value name="CONTENTS">
+                <shadow type="text" id="{pjtIN6p)z_yP_h@$;^)">
+                  <field name="TEXT">Белоруссия – государство в Восточной Европе. Расположено в западной части Восточно-Европейской равнины. Граничит на востоке с Россией, на юге с Украиной, на западе с Польшей, на северо-западе с Литвой, на севере с Латвией. Площадь 207,6 тыс. км2. Население 9413,4 тыс. чел. (2019, перепись). Столица – Минск. Денежная единица – белорусский рубль. Официальные языки – белорусский и русский. Административно-территориальное деление: 6 областей и город Минск (таблица 1). Области разделены на 118 районов и 10 городов областного подчинения.</field>
+                </shadow>
+              </value>
+              <value name="ID">
+                <shadow type="text" id="d~-Aqu~B*+@.wTLdatSf">
+                  <field name="TEXT">bel</field>
+                </shadow>
+              </value>
+              <next>
+                <block type="addAnnotation" id="|s8+|F@,d*WuC[N+C($7">
+                  <mutation xmlns="http://www.w3.org/1999/xhtml" usenameslot="false"></mutation>
+                  <value name="ANNOTATION">
+                    <shadow type="text" id="bWIYA+AMww-hY]_[TFVO">
+                      <field name="TEXT">4</field>
+                    </shadow>
+                  </value>
+                  <value name="TARGET">
+                    <shadow type="objectList" id="];))K]JH(e,]I[IF1D0T">
+                      <field name="FIELDNAME">Brazil</field>
+                    </shadow>
+                  </value>
+                  <value name="CONTENTS">
+                    <shadow type="text" id="T#eq8oT_s)86xFH9YcSJ">
+                      <field name="TEXT">Бразилия – государство в Латинской Америке. Занимает центральную и восточную части материка Южная Америка. Граничит на севере с Венесуэлой, Гайаной, Суринамом и Французской Гвианой, на северо-западе – с Колумбией, на западе – с Перу и Боливией, на юго-западе – с Парагваем и Аргентиной, на юге – с Уругваем (общая длина сухопутных границ около 16 тыс. км). На востоке омывается Атлантическим океаном (протяжённость береговой линии 7,4 тыс. км), в его акватории Б. принадлежат архипелаги Фернанду-ди-Норонья, Триндади (Тринидад-э-Мартин-Вас), Сан-Паулу (Сан-Педру-э-Сан-Паулу) и атолл Рокас. Б. – одно из крупнейших государств мира по площади территории и численности населения (5-е место по обоим показателям, 2014) и самое крупное в Латинской Америке. Площадь 8502,7 тыс. км2. Население 204,4 млн. человек (2015). Столица – Бразилиа. Официальный язык – португальский. Денежная единица – бразильский реал. Административно-территориальное деление: 26 штатов и Федеральный округ </field>
+                    </shadow>
+                  </value>
+                  <value name="ID">
+                    <shadow type="text" id="$hH9eE2mYtKdgIT|0p11">
+                      <field name="TEXT">bra</field>
+                    </shadow>
+                  </value>
+                  <next>
+                    <block type="addAnnotation" id="wvw?Ml.t;aJ!!4|m/9+6">
+                      <mutation xmlns="http://www.w3.org/1999/xhtml" usenameslot="false"></mutation>
+                      <value name="ANNOTATION">
+                        <shadow type="text" id="C]37i0iW7ljfh)DdS@C|">
+                          <field name="TEXT">5</field>
+                        </shadow>
+                      </value>
+                      <value name="TARGET">
+                        <shadow type="objectList" id="jN#qBLk=6g^[D#(q,zkL">
+                          <field name="FIELDNAME">British</field>
+                        </shadow>
+                      </value>
+                      <value name="CONTENTS">
+                        <shadow type="text" id="BQ8EJ_u_k@#`vE(rpEfk">
+                          <field name="TEXT">Великобритания - – государство в северо-западной части Европы. Расположено на Британских островах, отделённых от континента проливами Ла-Манш (Английский канал) и Па-де-Кале (Дуврский пролив); занимает остров Великобритания, северо-восточную часть острова Ирландия и ряд небольших островных групп (Гебридские острова, Оркнейские острова, Шетландские острова, острова Силли и др.) и островов (острова Уайт, острова Англси и др.). Омывается водами Атлантического океана и его морей – Северного (на востоке острова Великобритания) и Ирландского (между островами Великобритания и Ирландия); протяжённость береговой линии 12429 км, по суше граничит с государством Ирландия (длина границы 360 км).</field>
+                        </shadow>
+                      </value>
+                      <value name="ID">
+                        <shadow type="text" id="}6x(DV-Y[$hVZn6:u^4r">
+                          <field name="TEXT">UK</field>
+                        </shadow>
+                      </value>
+                      <next>
+                        <block type="addAnnotation" id="*?=YzF7DL^;-{-*0s/,B">
+                          <mutation xmlns="http://www.w3.org/1999/xhtml" usenameslot="false"></mutation>
+                          <value name="ANNOTATION">
+                            <shadow type="text" id="ytCcYQdSNJ[P=tmnOQMP">
+                              <field name="TEXT">6</field>
+                            </shadow>
+                          </value>
+                          <value name="TARGET">
+                            <shadow type="objectList" id="WX|#Tq~Bn8,tX/@4-[~B">
+                              <field name="FIELDNAME">Canada</field>
+                            </shadow>
+                          </value>
+                          <value name="CONTENTS">
+                            <shadow type="text" id="3::(:pUeE:{7Q2c$%_z@">
+                              <field name="TEXT">Канада го­су­дар­ст­во в Сев. Аме­ри­ке. За­ни­ма­ет сев. часть Сев. Аме­ри­ки и мно­го­числ. при­ле­гаю­щие ост­ро­ва, в т. ч. Ван­ку­вер, Ко­ро­ле­вы Шар­лот­ты (на за­па­де), Ка­над­ский Арк­ти­че­ский ар­хи­пе­лаг (на се­ве­ре), Нью­фа­унд­ленд, Ан­ти­кос­ти, Прин­ца Эду­ар­да (на юго-вос­то­ке). На юго-за­па­де омы­ва­ет­ся Ти­хим ок., на се­ве­ре – Сев. Ле­до­ви­тым ок. и его мо­рем Бо­фор­та, на вос­то­ке – Ат­лан­ти­че­ским ок., его мо­ря­ми Баф­фи­на и Лаб­ра­дор, а так­же Гуд­зо­но­вым зал. Дли­на бе­ре­го­вой ли­нии св. 243 тыс. км (вклю­чая по­бе­ре­жья ост­ро­вов; са­мая про­тя­жён­ная в ми­ре). На юге и се­ве­ро-за­па­де име­ет су­хо­пут­ную гра­ни­цу с США (про­тя­жён­ность 8,9 тыс. км, в т. ч. ок. 2,5 тыс. км – гра­ни­ца со шта­том Аля­ска).</field>
+                            </shadow>
+                          </value>
+                          <value name="ID">
+                            <shadow type="text" id="2uP[4j!E}rXZQ$@Riq?(">
+                              <field name="TEXT">can</field>
+                            </shadow>
+                          </value>
+                          <next>
+                            <block type="addAnnotation" id="X|D#@I*@@#!w/~JEqdW*">
+                              <mutation xmlns="http://www.w3.org/1999/xhtml" usenameslot="false"></mutation>
+                              <value name="ANNOTATION">
+                                <shadow type="text" id="tm/Hr9C`.P)dtH$@][__">
+                                  <field name="TEXT">7</field>
+                                </shadow>
+                              </value>
+                              <value name="TARGET">
+                                <shadow type="objectList" id="i1}#lFiGw_uyJX5AjJ@p">
+                                  <field name="FIELDNAME">China</field>
+                                </shadow>
+                              </value>
+                              <value name="CONTENTS">
+                                <shadow type="text" id="duV)mnyX`L^9m8cBt.X?">
+                                  <field name="TEXT">Китай – го­су­дар­ст­во в Вост. и Центр. Азии. На вос­то­ке и юго-вос­то­ке омы­ва­ет­ся во­да­ми Жёл­то­го, Во­сточ­но-Ки­тай­ско­го и Юж­но-Ки­тай­ско­го мо­рей Ти­хо­го ок. (про­тя­жён­ность бе­ре­го­вой ли­нии св. 18 тыс. км); у по­бе­ре­жья мно­го­числ. ост­ро­ва (круп­ней­шие – Тай­вань и Хай­нань). Дли­на су­хо­пут­ных гра­ниц ок. 22,8 тыс. км. На се­ве­ро-вос­то­ке гра­ни­чит с КНДР и Рос­си­ей, на се­ве­ре – с Мон­го­ли­ей, на се­ве­ро-за­па­де – с Рос­си­ей, Ка­зах­ста­ном и Кир­ги­зи­ей, на за­па­де – с Та­д­жи­ки­ста­ном и Аф­га­ни­ста­ном, а так­же с Па­ки­ста­ном (по т. н. ли­нии кон­тро­ля в Каш­ми­ре), на юго-за­па­де и юге – с Ин­ди­ей, Не­па­лом и Бу­та­ном; на юго-вос­то­ке – с Мьян­мой, Лао­сом и Вьет­на­мом.</field>
+                                </shadow>
+                              </value>
+                              <value name="ID">
+                                <shadow type="text" id="[m0lq5c4@!Cc/,iO%7Pd">
+                                  <field name="TEXT">chi</field>
+                                </shadow>
+                              </value>
+                              <next>
+                                <block type="addAnnotation" id="T1oDG^G@ldDT1^l#ItB^">
+                                  <mutation xmlns="http://www.w3.org/1999/xhtml" usenameslot="false"></mutation>
+                                  <value name="ANNOTATION">
+                                    <shadow type="text" id="(~sBVt[$f?S8:Vbhkn@^">
+                                      <field name="TEXT">8</field>
+                                    </shadow>
+                                  </value>
+                                  <value name="TARGET">
+                                    <shadow type="objectList" id="IzW~!-uNoWNp0UG`eZWQ">
+                                      <field name="FIELDNAME">France</field>
+                                    </shadow>
+                                  </value>
+                                  <value name="CONTENTS">
+                                    <shadow type="text" id="[QtHFdePRz}P!$TH{$M.">
+                                      <field name="TEXT">Франция – го­су­дар­ст­во в Зап. Ев­ро­пе. В его со­став вхо­дят мет­ро­по­лия Фран­ция (France métropolitaine; тер­ри­то­рия в Ев­ро­пе, с о. Кор­си­ка и др. ост­ро­ва­ми; да­лее Ф.) и 13 за­мор­ских вла­де­ний (5 за­мор­ских ре­гио­нов – Гва­де­лу­па, Гвиа­на и Мар­ти­ни­ка в Лат. Аме­ри­ке, Май­от­та и Ре­юнь­он в Аф­ри­ке; 5 за­мор­ских со­об­ществ – Сен-Бар­тель­ми и Сен-Мар­тен в Лат. Аме­ри­ке, Сен-Пьер и Ми­ке­лон в Сев. Аме­ри­ке, Франц. По­ли­не­зия и Уол­лис и Фу­ту­на в Океа­нии; осо­бое адм.-терр. об­ра­зо­ва­ние Но­вая Ка­ле­до­ния в Океа­нии; 2 за­мор­ских осо­бых адм.-терр. об­ра­зо­ва­ния – Франц. Юж­ные и Ан­тарк­тич. Тер­ри­то­рии в Ин­дий­ском ок. и Клип­пер­тон в Ти­хом ок.). Ф. на за­па­де омы­ва­ет­ся Бис­кай­ским зал., на се­ве­ро-за­па­де – про­ли­ва­ми Ла-Манш и Па-де-Ка­ле, на се­ве­ре – Се­вер­ным м., на юге – Сре­ди­зем­ным м. (дли­на бе­ре­го­вой ли­нии 3427 км). Гра­ни­чит на се­ве­ро-вос­то­ке с Бель­ги­ей, Люк­сем­бур­гом и Гер­ма­ни­ей, на вос­то­ке с Гер­ма­ни­ей и Швей­ца­ри­ей, на юго-вос­то­ке с Ита­ли­ей и Мо­на­ко, на юго-за­па­де с Ис­па­ни­ей и Ан­дор­рой. Пл. 544,0 тыс. км2 (с учё­том за­мор­ских вла­де­ний 643,8 тыс. км2). Нас. 64,5 млн. чел. (2016, оцен­ка; св. 66,5 млн. чел.). Офиц. язык – фран­цуз­ский. Де­неж­ная еди­ни­ца – ев­ро. Сто­ли­ца – Па­риж. Адм.-терр. де­ле­ние мет­ро­по­лии Фран­ция: 13 ре­гио­нов (с 2016; табл. 1), в их со­ста­ве 96 де­пар­та­мен­тов и Ли­он­ская гор. мет­ро­по­лия.</field>
+                                    </shadow>
+                                  </value>
+                                  <value name="ID">
+                                    <shadow type="text" id="/dYCKH)RPt@:9?Zl1@rM">
+                                      <field name="TEXT">fra</field>
+                                    </shadow>
+                                  </value>
+                                  <next>
+                                    <block type="addAnnotation" id="lcfX9V{l}Z%?Kg8004Os">
+                                      <mutation xmlns="http://www.w3.org/1999/xhtml" usenameslot="false"></mutation>
+                                      <value name="ANNOTATION">
+                                        <shadow type="text" id="OA@TCwf7t)c-%Kf-zW?2">
+                                          <field name="TEXT">9</field>
+                                        </shadow>
+                                      </value>
+                                      <value name="TARGET">
+                                        <shadow type="objectList" id="8^z?f,{[=vfeC+uvURgt">
+                                          <field name="FIELDNAME">Germany</field>
+                                        </shadow>
+                                      </value>
+                                      <value name="CONTENTS">
+                                        <shadow type="text" id="g=Gku2$AL0?dvD_S]hs)">
+                                          <field name="TEXT">Германия – го­су­дар­ст­во в Центр. Ев­ро­пе. На се­ве­ро-за­па­де омы­ва­ет­ся Се­вер­ным морем, на се­ве­ро-вос­то­ке – Бал­тий­ским морем (дли­на бе­ре­го­вой ли­нии 2389 км). На за­па­де Г. гра­ни­чит с Фран­ци­ей, Люк­сем­бур­гом, Бель­ги­ей и Ни­дер­лан­да­ми, на се­ве­ре – с Да­ни­ей, на вос­то­ке – с Поль­шей и Че­хи­ей, на юге – с Ав­ст­ри­ей и Швей­ца­ри­ей. Про­тя­жён­ность су­хо­пут­ных гра­ниц 3621 км. Пл. 357,6 тыс. км2 (из них внутр. ак­ва­то­рии 8,4 тыс. км2). Нас. 83,2 млн. чел. (2019; круп­ней­шая по чис­лу жи­те­лей стра­на Зарубежной Ев­ро­пы). Сто­ли­ца – Бер­лин. Официальный язык – не­мец­кий. Де­неж­ная еди­ни­ца – ев­ро. Г. – фе­де­ра­тив­ное го­су­дар­ст­во в со­ста­ве 16 фе­де­раль­ных зе­мель</field>
+                                        </shadow>
+                                      </value>
+                                      <value name="ID">
+                                        <shadow type="text" id="(wxnrYR)jUy8cINXVSl~">
+                                          <field name="TEXT">ger</field>
+                                        </shadow>
+                                      </value>
+                                      <next>
+                                        <block type="addAnnotation" id="Mgi+FJV)BBD;ddKnh(}A">
+                                          <mutation xmlns="http://www.w3.org/1999/xhtml" usenameslot="false"></mutation>
+                                          <value name="ANNOTATION">
+                                            <shadow type="text" id="P.qe_4htV}tmY7AhJ#4#">
+                                              <field name="TEXT">10</field>
+                                            </shadow>
+                                          </value>
+                                          <value name="TARGET">
+                                            <shadow type="objectList" id="6-8b*@p%te-T2Yh0dsZT">
+                                              <field name="FIELDNAME">India</field>
+                                            </shadow>
+                                          </value>
+                                          <value name="CONTENTS">
+                                            <shadow type="text" id="e.:2G;4Cpx[2{h;|xlyd">
+                                              <field name="TEXT">Индия – го­су­дар­ст­во в Юж. Азии. Омы­ва­ет­ся во­да­ми Ин­дий­ско­го ок.: на за­паде – Ара­вий­ским м., на юго-за­па­де – Лак­ка­див­ским м., на вос­то­ке – Бен­галь­ским зал.; на юге Ман­нар­ский зал. и Пол­к­ский прол. от­де­ля­ют И. от о. Шри-Лан­ка. Гра­ни­чит на се­ве­ро-за­па­де с Па­ки­ста­ном и Аф­га­ни­ста­ном, на се­ве­ре с Ки­та­ем, Не­па­лом и Бу­та­ном, на вос­то­ке с Мьян­мой и Банг­ла­деш. В со­став И. вхо­дят Лак­ка­див­ские о-ва (со­юз­ная тер­ри­то­рия Лак­шад­вип), Ан­да­ман­ские и Ни­ко­бар­ские о-ва. Пл. 3287,6 тыс. км2 (2,4% оби­тае­мой су­ши; 7-е ме­сто в ми­ре); макс. про­тя­жён­ность с се­ве­ра на юг св. 3210 км, с за­па­да на вос­ток св. 2930 км. По чис­лен­но­сти на­се­ле­ния (1129,7 млн. чел.) за­ни­ма­ет 2-е ме­сто в ми­ре по­сле Ки­тая (17,1% нас. Зем­ли; 2007). Сто­ли­ца – Нью-Де­ли (вхо­дит в со­став Нац. сто­лич­ной тер­ри­то­рии Де­ли). Офиц. язы­ки – хин­ди и анг­лий­ский. Де­неж­ная еди­ни­ца – ин­дий­ская ру­пия. В адм. от­но­ше­нии тер­ри­то­рия И. со­сто­ит из 28 шта­тов, Нац. сто­лич­ной тер­ри­то­рии Де­ли и 6 со­юз­ных тер­ри­то­рий </field>
+                                            </shadow>
+                                          </value>
+                                          <value name="ID">
+                                            <shadow type="text" id="ZZXAA,t=GV#JwaW]#Q~D">
+                                              <field name="TEXT">ind</field>
+                                            </shadow>
+                                          </value>
+                                          <next>
+                                            <block type="addAnnotation" id="K,+5)G%uv}#Q:`L%U}@7">
+                                              <mutation xmlns="http://www.w3.org/1999/xhtml" usenameslot="false"></mutation>
+                                              <value name="ANNOTATION">
+                                                <shadow type="text" id="1aipvh*AV[7crhHKAspA">
+                                                  <field name="TEXT">11</field>
+                                                </shadow>
+                                              </value>
+                                              <value name="TARGET">
+                                                <shadow type="objectList" id="3MK*Y:HK7|k;xdRBU;Pz">
+                                                  <field name="FIELDNAME">Japan</field>
+                                                </shadow>
+                                              </value>
+                                              <value name="CONTENTS">
+                                                <shadow type="text" id="i-AIr$CUA.M:nALysb(;">
+                                                  <field name="TEXT">Япония – го­су­дар­ст­во в Вост. Азии. Рас­по­ло­же­но на Япон­ских о-вах. Омы­ва­ет­ся Ти­хим ок. и его мо­ря­ми: Япон­ским на за­па­де, Охот­ским на се­ве­ре, Вос­точ­но-Ки­тай­ским на юго-за­па­де (про­тя­жён­ность бе­ре­го­вой ли­нии ок. 29,3 тыс. км). Гра­ни­чит по мо­рю с Рос­си­ей, Ки­та­ем, КНДР и Рес­пуб­ли­кой Ко­рея. Пл. 372,8 тыс. км2 (без спор­ных тер­ри­то­рий; по нац. дан­ным, 377,9 тыс. км2). Нас. 126,9 млн. чел. (2016, оцен­ка; 10-е ме­сто в ми­ре). Сто­ли­ца – То­кио. Офиц. язык – япон­ский. Де­неж­ная еди­ни­ца – япон­ская ие­на. В адм. от­но­ше­нии тер­ри­то­рия Я. де­лит­ся на 47 пре­фек­тур (табл. 1), объ­е­ди­нён­ных в сис­те­му «то­до­фу­кэн» (вклю­ча­ет: сто­лич­ную пре­фек­ту­ру «то» – То­кио; гу­бер­на­тор­ст­во «до» – Хок­кай­до; го­ро­да «фу» со ста­ту­сом пре­фек­тур – Кио­то и Оса­ка; 43 пре­фек­ту­ры «кэн»). Пре­фек­ту­ры со­сто­ят из уез­дов и го­ро­дов, Хок­кай­до – из ок­ру­гов. 20 го­ро­дов с нас. св. 500 тыс. чел. (2015) име­ют спец. ста­тус («го­ро­да, оп­ре­де­лён­ные ука­зом пра­ви­тель­ст­ва»). Я. тра­ди­ци­он­но де­лит­ся на 10 ре­гио­нов: Хок­кай­до, То­хо­ку, Тю­бу, Хо­ку­ри­ку (ино­гда объ­е­ди­ня­ют с Тю­бу), Кан­то, Кин­ки (Кан­сай), Тю­го­ку, Си­ко­ку, Кю­сю, Оки­на­ва (Рю­кю; ино­гда объ­е­ди­ня­ют с Кю­сю).</field>
+                                                </shadow>
+                                              </value>
+                                              <value name="ID">
+                                                <shadow type="text" id="3j?l.,hd~vm,awrs~RYk">
+                                                  <field name="TEXT">jap</field>
+                                                </shadow>
+                                              </value>
+                                              <next>
+                                                <block type="addAnnotation" id="(+LyKV!$2u@UjuJ-Tf]R">
+                                                  <mutation xmlns="http://www.w3.org/1999/xhtml" usenameslot="false"></mutation>
+                                                  <value name="ANNOTATION">
+                                                    <shadow type="text" id="FqrMJHu9#{_RNbMgZ0%H">
+                                                      <field name="TEXT">12</field>
+                                                    </shadow>
+                                                  </value>
+                                                  <value name="TARGET">
+                                                    <shadow type="objectList" id="$DoeGNM[SSey4x~gOHn~">
+                                                      <field name="FIELDNAME">Kazakhstan</field>
+                                                    </shadow>
+                                                  </value>
+                                                  <value name="CONTENTS">
+                                                    <shadow type="text" id="D!w,FVY;Ybrh4Y:6Usp}">
+                                                      <field name="TEXT">Казахстан – го­су­дар­ст­во в центр. час­ти Евр­азии. За­ни­ма­ет сев. часть Центр. Азии; рай­оны пра­во­бе­ре­жья р. Урал на край­нем за­па­де – в пре­де­лах Ев­ро­пы. На севе­ро-за­па­де, се­ве­ре и се­ве­ро-вос­то­ке гра­ни­чит с Рос­си­ей (дли­на гра­ни­цы ок. 7,6 тыс. км), на вос­то­ке – с Ки­та­ем, на юге – с Кир­ги­зи­ей, Уз­бе­ки­ста­ном и Турк­ме­ни­ей; на за­па­де омы­ва­ет­ся во­да­ми Кас­пий­ско­го мо­ря. Пл. 2724,9 тыс. км2 (9-е ме­сто в ми­ре; ок. 1,8% пл. су­ши); про­тя­жён­ность тер­ри­то­рии стра­ны с за­па­да на вос­ток ок. 3000 км, с се­ве­ра на юг – ок. 1600 км. Нас. 15,7 млн. чел. (2008). Сто­ли­ца – Ас­та­на. Де­неж­ная еди­ни­ца – тен­ге. Гос. язык – ка­зах­ский; в гос. уч­ре­ж­де­ни­ях и ор­га­нах ме­ст­но­го са­мо­управ­ле­ния на­рав­не с ка­зах­ским офи­ци­аль­но упот­реб­ля­ет­ся рус. яз. (де­ло­про­из­вод­ст­во в ор­га­нах вла­сти и управ­ле­ния пол­но­стью пе­ре­во­дит­ся на ка­зах. яз.). В адм. от­но­ше­нии тер­ри­то­рия К. со­сто­ит из 14 об­лас­тей и 2 го­ро­дов рес­пуб­ли­кан­ско­го под­чи­не­ния </field>
+                                                    </shadow>
+                                                  </value>
+                                                  <value name="ID">
+                                                    <shadow type="text" id="I7YA$O]2#s`Sj8P%A3ZS">
+                                                      <field name="TEXT">kaz</field>
+                                                    </shadow>
+                                                  </value>
+                                                  <next>
+                                                    <block type="addAnnotation" id="/{~YIj2cs!hg.YQAZ`bY">
+                                                      <mutation xmlns="http://www.w3.org/1999/xhtml" usenameslot="false"></mutation>
+                                                      <value name="ANNOTATION">
+                                                        <shadow type="text" id="5;Pra:]bT_3+2)3K2r/{">
+                                                          <field name="TEXT">13</field>
+                                                        </shadow>
+                                                      </value>
+                                                      <value name="TARGET">
+                                                        <shadow type="objectList" id="tep8dJu-vb;1GAJu40*n">
+                                                          <field name="FIELDNAME">Mongolia</field>
+                                                        </shadow>
+                                                      </value>
+                                                      <value name="CONTENTS">
+                                                        <shadow type="text" id="eBKbCJ4K$.i8xU+EW]=-">
+                                                          <field name="TEXT">Монголия – го­су­дар­ст­во в вост. час­ти Центр. Азии. На се­ве­ре гра­ни­чит с Рос­си­ей, на вос­то­ке, юге и за­па­де – с Ки­та­ем. Пл. 1564,9 тыс. км2. Нас. св. 2,76 млн. чел. (2010). Сто­ли­ца – Улан-Ба­тор. Де­неж­ная еди­ни­ца – туг­рик. Офиц. язык – мон­голь­ский. В адм. от­но­ше­нии тер­ри­то­рия М. со­сто­ит из 21 ай­ма­ка и г. Улан-Ба­тор (вме­сте с ок­ру­жаю­щей тер­ри­то­ри­ей вы­де­лен в са­мо­стоя­тель­ную адм.-терр. еди­ни­цу)</field>
+                                                        </shadow>
+                                                      </value>
+                                                      <value name="ID">
+                                                        <shadow type="text" id=")ZkFRniBv,tj7k9/9q_k">
+                                                          <field name="TEXT">mon</field>
+                                                        </shadow>
+                                                      </value>
+                                                      <next>
+                                                        <block type="addAnnotation" id="$-N5wet:.t92yk1[.C9z">
+                                                          <mutation xmlns="http://www.w3.org/1999/xhtml" usenameslot="false"></mutation>
+                                                          <value name="ANNOTATION">
+                                                            <shadow type="text" id="TQJe({J42DNn_*9[gyKl">
+                                                              <field name="TEXT">14</field>
+                                                            </shadow>
+                                                          </value>
+                                                          <value name="TARGET">
+                                                            <shadow type="objectList" id="sYndR?8Shy]..ef*xqz$">
+                                                              <field name="FIELDNAME">Poland</field>
+                                                            </shadow>
+                                                          </value>
+                                                          <value name="CONTENTS">
+                                                            <shadow type="text" id="tA,JSt?0T.Gc_aJOxbIk">
+                                                              <field name="TEXT">Польша – го­су­дар­ст­во в Центр. Ев­ро­пе. Гра­ни­чит на се­ве­ро-вос­то­ке с Рос­си­ей (Ка­ли­нин­град­ская обл.) и Лит­вой, на вос­то­ке – с Бе­ло­рус­си­ей, на юго-востоке – с Ук­раи­ной, на юге – со Сло­ва­ки­ей и Че­хи­ей, на за­па­де – с Гер­ма­ни­ей. На се­ве­ре омы­ва­ет­ся Бал­тий­ским мо­рем. Пл. 312,7 тыс. км2. Нас. 38,38 млн. чел. (2019). Сто­ли­ца – Вар­ша­ва. Де­неж­ная еди­ни­ца – польск. зло­тый. Офиц. язык – поль­ский. Адм.-терр. де­ле­ние: 16 вое­водств</field>
+                                                            </shadow>
+                                                          </value>
+                                                          <value name="ID">
+                                                            <shadow type="text" id="-Gt[l,D@l/_^6lFzbFrm">
+                                                              <field name="TEXT">pol</field>
+                                                            </shadow>
+                                                          </value>
+                                                          <next>
+                                                            <block type="addAnnotation" id="F|`tC#!#@^Wm~?(eWepK">
+                                                              <mutation xmlns="http://www.w3.org/1999/xhtml" usenameslot="false"></mutation>
+                                                              <value name="ANNOTATION">
+                                                                <shadow type="text" id="xDtEzxzz+n?0ib[4wc`S">
+                                                                  <field name="TEXT">15</field>
+                                                                </shadow>
+                                                              </value>
+                                                              <value name="TARGET">
+                                                                <shadow type="objectList" id="r+!F.},*F6hTRY,gW.?w">
+                                                                  <field name="FIELDNAME">Spain</field>
+                                                                </shadow>
+                                                              </value>
+                                                              <value name="CONTENTS">
+                                                                <shadow type="text" id="8kjui#N}[O+JDM5e@.S6">
+                                                                  <field name="TEXT">Испания – го­су­дар­ст­во на юго-за­па­де Ев­ро­пы. За­ни­ма­ет б. ч. Пи­ре­ней­ско­го п-ова, а так­же Ба­ле­ар­ские и Пи­ти­уз­ские о-ва в Сре­ди­зем­ном м. и Ка­нар­ские о-ва в Ат­лан­ти­че­ском ок. На се­ве­ре омы­ва­ет­ся Бис­кай­ским зал., на се­ве­ро-за­па­де и юго-за­па­де – Ат­лан­ти­че­ским ок., на вос­то­ке и юге – Сре­ди­зем­ным м. (дли­на бе­ре­го­вой ли­нии 4964 км). На се­ве­ро-вос­то­ке Пи­ре­ней­ские го­ры об­ра­зу­ют ес­теств. гра­ни­цу И. с Фран­ци­ей и Ан­дор­рой. На за­па­де гра­ни­чит с Пор­ту­га­ли­ей, на юге с Гиб­рал­та­ром. Пл. 505,99 тыс. км2 (вклю­чая Сеу­ту и Ме­ли­лью – 506,03 тыс. км2). Нас. 44,9 млн. чел. (2007). Сто­ли­ца – Мад­рид. Офиц. язык – ис­пан­ский; в ав­то­ном­ных со­об­ще­ст­вах ста­тус офи­ци­аль­ных име­ют так­же ба­ск­ский яз. (Стра­на Бас­ков и На­вар­ра), га­ли­сий­ский яз. (Га­ли­сия), ка­та­лан­ский яз. (Ка­та­ло­ния, Ба­ле­ар­ские о-ва, Ва­лен­сия), ва­лен­сий­ское на­ре­чие (Ва­лен­сия). В адм. от­но­ше­нии стра­на раз­де­ле­на на 17 ав­то­ном­ных со­об­ществ (об­лас­тей), со­стоя­щих из од­ной или не­сколь­ких про­вин­ций (все­го 50) (табл. 1). Под пря­мым управ­ле­ни­ем И. (управ­ля­ют­ся как ав­то­ном­ные со­об­ще­ст­ва) на­хо­дят­ся 2 го­ро­да на сев. по­бе­ре­жье Аф­ри­ки – Се­ута и Ме­ли­лья (вме­сте с при­ле­гаю­щи­ми к ним не­боль­ши­ми ост­ро­ва­ми Алу­се­мас, Ве­лес-де-ла-Го­ме­ра, Ча­фа­ри­нас). Де­неж­ная еди­ни­ца – ев­ро.</field>
+                                                                </shadow>
+                                                              </value>
+                                                              <value name="ID">
+                                                                <shadow type="text" id="W[:J$L[BhrHaQ`CWQ[8Y">
+                                                                  <field name="TEXT">spa</field>
+                                                                </shadow>
+                                                              </value>
+                                                              <next>
+                                                                <block type="addAnnotation" id="FJl*2-Q!JtUh0,xWq8)1">
+                                                                  <mutation xmlns="http://www.w3.org/1999/xhtml" usenameslot="false"></mutation>
+                                                                  <value name="ANNOTATION">
+                                                                    <shadow type="text" id="$15MpGv`/}=h0#/Z,oM6">
+                                                                      <field name="TEXT">16</field>
+                                                                    </shadow>
+                                                                  </value>
+                                                                  <value name="TARGET">
+                                                                    <shadow type="objectList" id="qLlp}!5LH*@Ad#Mq}0mA">
+                                                                      <field name="FIELDNAME">UA</field>
+                                                                    </shadow>
+                                                                  </value>
+                                                                  <value name="CONTENTS">
+                                                                    <shadow type="text" id="-ZBCRM67@a6/:DlLR0Ze">
+                                                                      <field name="TEXT">Украина – го­су­дар­ст­во в Вост. Ев­ро­пе. Гра­ни­чит на се­ве­ре с Бе­ло­рус­си­ей и Рос­сией, на се­ве­ро-вос­то­ке, вос­то­ке и юге с Рос­си­ей, на юго-за­па­де с Ру­мы­ни­ей и Мол­да­ви­ей, на за­па­де с Венг­ри­ей, Сло­ва­ки­ей и Поль­шей; на юге омы­ва­ет­ся Чёр­ным и Азов­ским мо­ря­ми (про­тя­жён­ность бе­ре­го­вой ли­нии 1662 км). Пл. 576,6 тыс. км2 (2015, оцен­ка; 1-е ме­сто в за­ру­беж­ной Ев­ро­пе). Нас. 42,8 млн. чел. (2016; 6-е ме­сто в за­ру­беж­ной Ев­ро­пе). Сто­ли­ца – Ки­ев. Офиц. язык – ук­ра­ин­ский, на вос­то­ке и юге ши­ро­ко рас­про­стра­нён рус­ский, ло­каль­ное рас­про­стра­не­ние в рай­онах про­жи­ва­ния со­от­вет­ст­вую­щих на­ро­дов име­ют так­же молд. и венг. язы­ки. Де­неж­ная еди­ни­ца – грив­на. Адм.-терр. де­ле­ние: 24 об­лас­ти и го­род со спец. ста­ту­сом Ки­ев </field>
+                                                                    </shadow>
+                                                                  </value>
+                                                                  <value name="ID">
+                                                                    <shadow type="text" id="J.r;:*V5Sh,-seJ^.x+i">
+                                                                      <field name="TEXT">ua</field>
+                                                                    </shadow>
+                                                                  </value>
+                                                                  <next>
+                                                                    <block type="addAnnotation" id="kGvH1Q^l?R-Vg1SXrY]M">
+                                                                      <mutation xmlns="http://www.w3.org/1999/xhtml" usenameslot="false"></mutation>
+                                                                      <value name="ANNOTATION">
+                                                                        <shadow type="text" id="7?nCF.5LxhhCX8YGSs.(">
+                                                                          <field name="TEXT">17</field>
+                                                                        </shadow>
+                                                                      </value>
+                                                                      <value name="TARGET">
+                                                                        <shadow type="objectList" id="#X.ss]s/JZvmN7OVwu~p">
+                                                                          <field name="FIELDNAME">USA</field>
+                                                                        </shadow>
+                                                                      </value>
+                                                                      <value name="CONTENTS">
+                                                                        <shadow type="text" id="tR*mnI(Z?(-^!eYOpdZp">
+                                                                          <field name="TEXT">США – го­су­дар­ст­во в Сев. Аме­ри­ке. Тер­ри­то­рия со­сто­ит из трёх час­тей: ос­нов­ной [еди­ный мас­сив из 48 шта­тов (смеж­ные шта­ты) и Фе­де­раль­но­го ок­ру­га Ко­лум­бия; 83,5% тер­ри­то­рии и 99,4% нас. стра­ны; в ср. час­ти ма­те­ри­ка Сев. Аме­ри­ка] и 2 экс­кла­вов: шта­та Аля­ска (16,3% и 0,2%; на край­нем се­ве­ро-за­паде ма­те­ри­ка Сев. Аме­ри­ка) и шта­та Га­вайи (0,2% и 0,4%; в центр. час­ти Ти­хо­го ок.). Смеж­ные шта­ты США на вос­то­ке, юго-вос­то­ке и юге омы­ва­ют­ся Ат­лан­ти­че­ским ок. (в т. ч. на юге – Мек­си­кан­ским зал.; от­де­ле­ны Фло­рид­ским прол. от Ку­бы и Ба­гам­ских о-вов), на за­па­де – Ти­хим ок. Штат Аля­ска на се­ве­ре омы­ва­ет­ся Сев. Ле­до­ви­тым ок. (мо­ря Бо­фор­та и Чу­кот­ское), на за­па­де – Бе­рин­го­вым м., на юге – зал. Аля­ска Ти­хо­го ок.; штат Га­вайи – Ти­хим ок. (об­щая дли­на бе­ре­го­вой ли­нии 19924 км). Смеж­ные шта­ты США на се­ве­ре и штат Аля­ска на вос­то­ке гра­ни­чат по су­ше с Ка­на­дой, смеж­ные шта­ты на юге – с Мек­си­кой. Пл. 9372,6 тыс. км2 (4-е ме­сто в ми­ре). Нас. 318,9 млн. чел. (2014; 3-е ме­сто в ми­ре). Сто­ли­ца – Ва­шинг­тон (об­ра­зу­ет Фе­де­раль­ный ок­руг Ко­лум­бия). Офиц. язык – анг­лий­ский. Де­неж­ная еди­ни­ца – дол­лар США. Адм.-терр. де­ле­ние: 50 шта­тов и Фе­де­раль­ный ок­руг Ко­лум­бия (табл.). Ка­ж­дый штат делит­ся на ок­ру­га (граф­ст­ва), кро­ме шта­тов Луи­зиа­на (де­лит­ся на пе­ри­ши – при­хо­ды) и Аля­ска (де­лит­ся на бо­ро – рай­оны); все­го на­счи­ты­ва­ет­ся (2013) 3007 соб­ст­вен­но ок­ру­гов и 137 эк­ви­ва­лент­ных им еди­ниц.</field>
+                                                                        </shadow>
+                                                                      </value>
+                                                                      <value name="ID">
+                                                                        <shadow type="text" id="Kda$Y([-]kHx+u*e,q.%">
+                                                                          <field name="TEXT">usa</field>
+                                                                        </shadow>
+                                                                      </value>
+                                                                    </block>
+                                                                  </next>
+                                                                </block>
+                                                              </next>
+                                                            </block>
+                                                          </next>
+                                                        </block>
+                                                      </next>
+                                                    </block>
+                                                  </next>
+                                                </block>
+                                              </next>
+                                            </block>
+                                          </next>
+                                        </block>
+                                      </next>
+                                    </block>
+                                  </next>
+                                </block>
+                              </next>
+                            </block>
+                          </next>
+                        </block>
+                      </next>
+                    </block>
+                  </next>
+                </block>
+              </next>
+            </block>
+          </next>
+        </block>
+      </next>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="addAnnotation" id="~d:=;yBmdYac,PKNF6di" x="30" y="730">
+      <mutation xmlns="http://www.w3.org/1999/xhtml" usenameslot="false"></mutation>
+      <value name="ANNOTATION">
+        <shadow type="text" id="u[i34SA%D(?Iu60n_qFO">
+          <field name="TEXT">Луна</field>
+        </shadow>
+      </value>
+      <value name="TARGET">
+        <shadow type="objectList" id="V2e~TvKffrT.A6y+Lt=3">
+          <field name="FIELDNAME">Moon</field>
+        </shadow>
+      </value>
+      <value name="CONTENTS">
+        <shadow type="text" id="I%rj4M-Pr.I;}T2~mZKV">
+          <field name="TEXT"/>
+        </shadow>
+      </value>
+      <value name="ID">
+        <shadow type="text" id="3`{*qsv84+9m=)mAS(j#">
+          <field name="TEXT">moon1</field>
+        </shadow>
+      </value>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="whenClicked" id="#%G3:~r.JZ@;!Sui`%,C" x="50" y="850">
+      <mutation xmlns="http://www.w3.org/1999/xhtml" adveventoptions="false" enableifmissed="false"></mutation>
+      <field name="X_RAY">FALSE</field>
+      <field name="DOUBLE_CLICK">FALSE</field>
+      <field name="LEFT_BUTTON">TRUE</field>
+      <field name="MIDDLE_BUTTON">TRUE</field>
+      <field name="RIGHT_BUTTON">TRUE</field>
+      <value name="VALUE">
+        <shadow type="objectList" id="_TWJFP8hk^^G_Uprlp|c">
+          <field name="FIELDNAME">Луна</field>
+        </shadow>
+      </value>
+      <statement name="DO">
+        <block type="assignMaterial" id="B+fX!+O+21NKamd9b0^D">
+          <value name="VALUE2">
+            <shadow type="materialList" id="SjW(Vo_C4_5lz6JArGfs">
+              <field name="FIELDNAME">better.001</field>
+            </shadow>
+          </value>
+          <value name="VALUE1">
+            <shadow type="objectList" id="Npzj@AV!;r_/D%xh)Fbj">
+              <field name="FIELDNAME">earth</field>
+            </shadow>
+          </value>
+          <next>
+            <block type="setHTMLElemStyle" id="Sii).EOielzagsRi?Mp6">
+              <field name="PROPERTY">display</field>
+              <field name="PARENT">FALSE</field>
+              <value name="VALUE">
+                <block type="text" id="D:,FX/5@y)-A3P)gHWq%">
+                  <field name="TEXT">none</field>
+                </block>
+              </value>
+              <value name="ID">
+                <shadow type="text" id="~Q-KP_Q,k=[N:LCf4!8P">
+                  <field name="TEXT"/>
+                </shadow>
+                <block type="lists_create_with" id="sA@PPM,og%y{8k(Tes6*">
+                  <mutation items="17"/>
+                  <value name="ADD0">
+                    <block type="text" id="[2$;Jif5M1%t;)4:=u]v">
+                      <field name="TEXT">ru</field>
+                    </block>
+                  </value>
+                  <value name="ADD1">
+                    <block type="text" id="S;S^L6.(W#s`;Nt,7CX8">
+                      <field name="TEXT">au</field>
+                    </block>
+                  </value>
+                  <value name="ADD2">
+                    <block type="text" id="Y.]{nPoV57_7wyS@Jze-">
+                      <field name="TEXT">bel</field>
+                    </block>
+                  </value>
+                  <value name="ADD3">
+                    <block type="text" id="+@gsBf@$inXqde4zuYP[">
+                      <field name="TEXT">bra</field>
+                    </block>
+                  </value>
+                  <value name="ADD4">
+                    <block type="text" id="Fo8cc)o9Op#X#X6I=-qU">
+                      <field name="TEXT">UK</field>
+                    </block>
+                  </value>
+                  <value name="ADD5">
+                    <block type="text" id="Sj*UIT?fTqhF)+3=}iKo">
+                      <field name="TEXT">can</field>
+                    </block>
+                  </value>
+                  <value name="ADD6">
+                    <block type="text" id="n7*ur7IA5.RLWYb%QBl_">
+                      <field name="TEXT">chi</field>
+                    </block>
+                  </value>
+                  <value name="ADD7">
+                    <block type="text" id=";9j0`!;#C5VaXd-e-IUJ">
+                      <field name="TEXT">fra</field>
+                    </block>
+                  </value>
+                  <value name="ADD8">
+                    <block type="text" id="K/X#@KF#i]!2KTpZm%m_">
+                      <field name="TEXT">ger</field>
+                    </block>
+                  </value>
+                  <value name="ADD9">
+                    <block type="text" id="Bx8uhk(d?LfkzN/f_=9{">
+                      <field name="TEXT">ind</field>
+                    </block>
+                  </value>
+                  <value name="ADD10">
+                    <block type="text" id="hDib[W%gv3zbn0MD`PkR">
+                      <field name="TEXT">jap</field>
+                    </block>
+                  </value>
+                  <value name="ADD11">
+                    <block type="text" id="wdXt.h1f+x5;/WoMkcsc">
+                      <field name="TEXT">kaz</field>
+                    </block>
+                  </value>
+                  <value name="ADD12">
+                    <block type="text" id="z}3_#*G-=kBdg/jl~@{Y">
+                      <field name="TEXT">mon</field>
+                    </block>
+                  </value>
+                  <value name="ADD13">
+                    <block type="text" id="PaLUgpUu=m~vLeO]HfvM">
+                      <field name="TEXT">pol</field>
+                    </block>
+                  </value>
+                  <value name="ADD14">
+                    <block type="text" id="CDeJ4%4hr!8rATUu{7sU">
+                      <field name="TEXT">spa</field>
+                    </block>
+                  </value>
+                  <value name="ADD15">
+                    <block type="text" id="l5)nX9szTPDAIS73[[:5">
+                      <field name="TEXT">ua</field>
+                    </block>
+                  </value>
+                  <value name="ADD16">
+                    <block type="text" id="{9U=O?98N)n$*N{U|^cC">
+                      <field name="TEXT">usa</field>
+                    </block>
+                  </value>
+                </block>
+              </value>
+              <next>
+                <block type="setTimeout" id="ocdU%+-331HzS%L7+K{T">
+                  <value name="VALUE">
+                    <shadow type="math_number" id="2@IY*Y19R%$5=)siu)][">
+                      <field name="NUM">10</field>
+                    </shadow>
+                  </value>
+                  <statement name="DO">
+                    <block type="assignMaterial" id="EEeYac9,PFAZ,utLe[FD">
+                      <value name="VALUE2">
+                        <shadow type="materialList" id="SC2ip=pg,{jcKvhCp4V.">
+                          <field name="FIELDNAME">Материал</field>
+                        </shadow>
+                      </value>
+                      <value name="VALUE1">
+                        <shadow type="objectList" id="UOp_I_-`EFQ7}zA!gp3r">
+                          <field name="FIELDNAME">earth</field>
+                        </shadow>
+                      </value>
+                      <next>
+                        <block type="setHTMLElemStyle" id="agnNc~1^w+9uNbL{Qx*k">
+                          <field name="PROPERTY">display</field>
+                          <field name="PARENT">FALSE</field>
+                          <value name="VALUE">
+                            <block type="text" id="O]XZk82cq_@?SS2V`S=q">
+                              <field name="TEXT">block</field>
+                            </block>
+                          </value>
+                          <value name="ID">
+                            <shadow type="text">
+                              <field name="TEXT"/>
+                            </shadow>
+                            <block type="lists_create_with" id="h:EA$.vg|P1G%w;yWF(/">
+                              <mutation items="17"/>
+                              <value name="ADD0">
+                                <block type="text" id="[vOxw/3,`oipka2Z;x!3">
+                                  <field name="TEXT">ru</field>
+                                </block>
+                              </value>
+                              <value name="ADD1">
+                                <block type="text" id="stQCUQPNJ7TLJ2XPeg_a">
+                                  <field name="TEXT">au</field>
+                                </block>
+                              </value>
+                              <value name="ADD2">
+                                <block type="text" id="@-GacKmTW]diER%Np}fH">
+                                  <field name="TEXT">bel</field>
+                                </block>
+                              </value>
+                              <value name="ADD3">
+                                <block type="text" id="yiLs*[#zHT(1MOQk7hPO">
+                                  <field name="TEXT">bra</field>
+                                </block>
+                              </value>
+                              <value name="ADD4">
+                                <block type="text" id=",oF;cVkkXC-D+uM9:*h4">
+                                  <field name="TEXT">UK</field>
+                                </block>
+                              </value>
+                              <value name="ADD5">
+                                <block type="text" id="W,r02T--hZ+IhK%XRR~n">
+                                  <field name="TEXT">can</field>
+                                </block>
+                              </value>
+                              <value name="ADD6">
+                                <block type="text" id="1,-4qj^^e)xQA2edkDe/">
+                                  <field name="TEXT">chi</field>
+                                </block>
+                              </value>
+                              <value name="ADD7">
+                                <block type="text" id="|Nr!mS;sz_;qs*4X{HyN">
+                                  <field name="TEXT">fra</field>
+                                </block>
+                              </value>
+                              <value name="ADD8">
+                                <block type="text" id="$4TvP6A?Y]bWhm2p{@(p">
+                                  <field name="TEXT">ger</field>
+                                </block>
+                              </value>
+                              <value name="ADD9">
+                                <block type="text" id="tDoDm1/fPz%^]wK%X?cI">
+                                  <field name="TEXT">ind</field>
+                                </block>
+                              </value>
+                              <value name="ADD10">
+                                <block type="text" id="04W7zGJAj])O?7ZM7a2Z">
+                                  <field name="TEXT">jap</field>
+                                </block>
+                              </value>
+                              <value name="ADD11">
+                                <block type="text" id="/BrQ#8r@wD7W+)I6p`;4">
+                                  <field name="TEXT">kaz</field>
+                                </block>
+                              </value>
+                              <value name="ADD12">
+                                <block type="text" id="cWRL.Cj)p;OQahWIh18U">
+                                  <field name="TEXT">mon</field>
+                                </block>
+                              </value>
+                              <value name="ADD13">
+                                <block type="text" id="FLG;AwEpAo)XemY|g/Jo">
+                                  <field name="TEXT">pol</field>
+                                </block>
+                              </value>
+                              <value name="ADD14">
+                                <block type="text" id="j8`Pz{59lMSYIkA1#O?v">
+                                  <field name="TEXT">spa</field>
+                                </block>
+                              </value>
+                              <value name="ADD15">
+                                <block type="text" id="=|P`b+EG~$zOXK/OWNvS">
+                                  <field name="TEXT">ua</field>
+                                </block>
+                              </value>
+                              <value name="ADD16">
+                                <block type="text" id="zldw;c%W%q)GjQ2gm^`m">
+                                  <field name="TEXT">usa</field>
+                                </block>
+                              </value>
+                            </block>
+                          </value>
+                        </block>
+                      </next>
+                    </block>
+                  </statement>
+                </block>
+              </next>
+            </block>
+          </next>
+        </block>
+      </statement>
+    </block>
+  </tab>
+  <editorsettings viewport-x="1142.8" viewport-y="78" viewport-w="683.2" viewport-h="462.5" viewport-hidden="false" toolbox-library-mode="false" toolbox-minimized-mode="false"></editorsettings>
+</xml>
